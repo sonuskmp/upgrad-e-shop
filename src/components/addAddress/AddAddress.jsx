@@ -171,8 +171,8 @@ const AddAddress = () => {
                     <TextField name='zipcode' variant='outlined' label='zipcode' onChange={(e) => { handleChange(e) }} />
                     <button type='button' onClick={addAddress} className='loginBtn'>Save Address</button>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Button style={{ marginTop: '10px', marginRight: '20px' }} size="medium" variant='contained' onClick={goToOrder}>BACK</Button>
-                        <Button style={{ marginTop: '10px' }} size="medium" variant='contained' color="primary" onClick={nextstep}>NEXT</Button>
+                        <Button style={{ marginTop: '10px', marginRight: '20px', backgroundColor: "#3f51b5" }} size="medium" variant='contained' onClick={goToOrder}>BACK</Button>
+                        <Button style={{ marginTop: '10px', backgroundColor: "#3f51b5" }} size="medium" variant='contained' color="primary" onClick={nextstep}>NEXT</Button>
                     </div>
                 </form>
             </>}
@@ -197,8 +197,8 @@ const AddAddress = () => {
                         </div>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Button style={{ marginTop: '10px', marginRight: '20px' }} size="medium" variant='contained' onClick={midStep} >BACK</Button>
-                        <Button style={{ marginTop: '10px' }} size="medium" variant='contained' onClick={placeOrder}>PLACE ORDER</Button>
+                        <Button style={{ marginTop: '10px', marginRight: '20px', backgroundColor: "#3f51b5" }} size="medium" variant='contained' onClick={midStep} >BACK</Button>
+                        <Button style={{ marginTop: '10px' , backgroundColor: "#3f51b5"}} size="medium" variant='contained' onClick={placeOrder}>PLACE ORDER</Button>
                     </div>
                 </>
             }

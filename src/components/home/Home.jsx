@@ -161,10 +161,10 @@ const Home = () => {
                 </Typography>
               </CardContent>
               <CardActions style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Button size="small" variant='contained' onClick={()=>{navigate('/product/'+item.id)}}>Buy</Button>
+                <Button  style={{backgroundColor: "#3f51b5"}} size="small" variant='contained' onClick={()=>{navigate('/product/'+item.id)}}>Buy</Button>
                {loggdata?.role==='ADMIN' && <div>
-                  <Button size="small" onClick={() => { navigate('/editproduct/' + item.id) }}><EditIcon /></Button>
-                  <Button size="small" onClick={() => { delteSwal(item.id) }}><DeleteIcon /></Button>
+                  <Button style={{backgroundColor: "#3f51b5"}} size="small" onClick={() => { navigate('/editproduct/' + item.id) }}><EditIcon /></Button>
+                  <Button style={{backgroundColor: "#3f51b5"}} size="small" onClick={() => { delteSwal(item.id) }}><DeleteIcon /></Button>
                 </div>}
               </CardActions>
             </Card>
